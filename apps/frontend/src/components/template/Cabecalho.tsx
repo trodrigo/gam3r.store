@@ -1,11 +1,11 @@
-import Logo from '../shared/Logo'
+'use client'
 import IconeCarrinho from '../shared/IconeCarrinho'
 import Link from 'next/link'
-// import useCarrinho from '@/data/hooks/useCarrinho'
+import Logo from '../shared/Logo'
+import useCarrinho from '@/data/hooks/useCarrinho'
 
 export default function Cabecalho() {
-    const qtdeItens = 0
-    // const { qtdeItens } = useCarrinho()
+    const { qtdeItens } = useCarrinho()
     return (
         <div
             className="flex flex-col h-20"

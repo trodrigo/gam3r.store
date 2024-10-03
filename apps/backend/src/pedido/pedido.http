@@ -11,33 +11,52 @@ POST http://localhost:3005/pedidos
 Content-Type: application/json
 
 {
-    "data": "2021-09-01T00:00:00.000Z",
-    "valorTotal": 200.00,
-    "status": "RECEBIDO",
-    "formaPagamento": "CARTAO",
+    "data": "2024-10-03T01:37:33.434Z",
+    "formaPagamento": "BOLETO",
+    "valorTotal": 2399.99,
     "entrega": {
-        "nome": "Fulano",
-        "email": "fulano@email.com",
-        "cpf": "123.456.789-00",
-        "logradouro": "Rua dos Bobos, 0",
-        "complemento": "Apto 101",
-        "cidade": "São Paulo",
-        "estado": "SP"
+        "nome": "Tarcio Rodrigo",
+        "cidade": "Cubatão",
+        "estado": "São Paulo",
+        "cpf": "28408664808",
+        "email": "tr.rodrigo@gmail.com",
+        "logradouro": "Rua Ofélia Marques de Meireles, 892",
+        "complemento": "Casa"
     },
+    "status": "RECEBIDO",
     "itens": [
         {
-            "quantidade": 1,
-            "precoUnitario": 100.00,
             "produto": {
-                "id": 1
-            }
-        },
-        {
+                "id": 21,
+                "nome": "Monitor Gamer LG UltraGear 34\"",
+                "descricao": "O LG UltraGear 34\" é um monitor ultra-wide com resolução WQHD (3440x1440), taxa de atualização de 160Hz e suporte a G-Sync. Ideal para quem busca um monitor para jogos e produtividade.",
+                "marca": "LG",
+                "modelo": "34GN850-B",
+                "imagem": "https://firebasestorage.googleapis.com/v0/b/formacao-dev.appspot.com/o/lancamentos%2Fgam3rstore%2Fmonitor-gamer-lg-ultragear-lg-34-curvo.png?alt=media&token=7f00d9ba-f2ef-416e-bf01-0b84962e099b",
+                "nota": 4.7,
+                "videoReview": "https://www.youtube.com/embed/YUbQODIro2k",
+                "tags": [
+                    "Ultra-Wide",
+                    "144Hz",
+                    "G-Sync"
+                ],
+                "precoBase": 2999.99,
+                "precoPromocional": 2399.99,
+                "menorPreco": 2199.99,
+                "maiorPreco": 3999.99,
+                "precoMedio": 2899.99,
+                "especificacoes": {
+                    "peso": "7.3 kg",
+                    "Tamanho": "34 polegadas",
+                    "destaque": "Painel WQHD",
+                    "Tecnologia": "IPS",
+                    "Conectividade": "HDMI, DisplayPort, USB",
+                    "Tempo de Resposta": "1ms",
+                    "Taxa de Atualização": "160Hz"
+                }
+            },
             "quantidade": 1,
-            "precoUnitario": 100.00,
-            "produto": {
-                "id": 2
-            }
+            "precoUnitario": 2399.99
         }
     ]
 }
